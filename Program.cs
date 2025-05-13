@@ -7,8 +7,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 Log.Logger = new LoggerConfiguration()
             .MinimumLevel.Information()
-            .MinimumLevel.Override("Microsoft", LogEventLevel.Warning)
-            .MinimumLevel.Override("System", LogEventLevel.Warning)
+            .WriteTo.Console()
             .WriteTo.File("Logs/Information.log", rollingInterval: RollingInterval.Day)
             .CreateLogger();
 
