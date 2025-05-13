@@ -22,8 +22,8 @@ secrets.json
 .log
 Logs
 
-# EF Core migrations snapshot (optional)
-MigrationsModelSnapshot.cs
+# EF Core migrations snapshot
+Migrations
 
 # Environment files
 .env
