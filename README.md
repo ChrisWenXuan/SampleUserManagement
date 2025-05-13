@@ -28,7 +28,8 @@ This is a sample .NET Core Web API project that demonstrates CRUD operations wit
 ## Docker & Redis Container
 
 Make sure you have Docker installed in your local machine.
-Open Terminal and run docker run -d -p 6379:6379 --name UserManagementRedisCache redis
+Open Terminal and run :
+docker run -d -p 6379:6379 --name UserManagementRedisCache redis
 
 ## Clone Project
 
