@@ -30,10 +30,16 @@ This is a sample .NET Core Web API project that demonstrates CRUD operations wit
 Make sure you have Docker installed in your local machine.
 Open Terminal and run docker run -d -p 6379:6379 --name UserManagementRedisCache redis
 
+## Clone Project
+
+1) Clone the project to your local machine
+git clone https://github.com/ChrisWenXuan/SampleUserManagement.git
+
+2) cd to 'SampleUserManagement'
+cd SampleUserManagement
+
 ## EF Core Migration
 
-Make sure to clone / download the project in your local machine
-Open Terminal and cd to correct project path. Eg: ..\source\repos\SampleUserManagement\SampleUserManagement
 Run the following code in Terminal
 1) dotnet ef migrations add InitialUserManagement
 2) dotnet ef database update
@@ -41,5 +47,4 @@ Run the following code in Terminal
 ## Running the Project
 
 dotnet run
-
 The project will be running in local available port. Eg: http://localhost:5196/
