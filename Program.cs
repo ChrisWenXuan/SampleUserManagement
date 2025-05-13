@@ -1,12 +1,14 @@
 using SampleUserManagement.Data;
 using SampleUserManagement.Services;
 using Serilog;
+using Serilog.Events;
 
 var builder = WebApplication.CreateBuilder(args);
 
 Log.Logger = new LoggerConfiguration()
             .MinimumLevel.Information()
-            .WriteTo.Console()
+            .MinimumLevel.Override("Microsoft", LogEventLevel.Warning)
+            .MinimumLevel.Override("System", LogEventLevel.Warning)
             .WriteTo.File("Logs/Information.log", rollingInterval: RollingInterval.Day)
             .CreateLogger();
 

@@ -49,3 +49,12 @@ Run the following code in Terminal
 
 dotnet run
 The project will be running in local available port. Eg: http://localhost:5196/
+
+## Possible Enhancment
+- Create Enum Class to better standardizing the status for (Active, Inactive, Deleted)
+- Create DeletedAt Field in DB to capture record deletion datetime
+- Implement Authentication function to retrict API calling to login user only
+- Throw Custom Exception for more customization in error handling
+- Apply pagination for data listing
+- Use recaptcha to prevent bot traffic
+
